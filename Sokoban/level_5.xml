@@ -1,0 +1,10 @@
+<Level Number="5" Width="8" Height="8">
+<Row> ####</Row>
+<Row> #@ ###</Row>
+<Row> # $  #</Row>
+<Row>##M # ##</Row>
+<Row>#.M M  #</Row>
+<Row>#.$  M #</Row>
+<Row>#.   $ #</Row>
+<Row>########</Row>
+</Level>

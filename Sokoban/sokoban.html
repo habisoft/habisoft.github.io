@@ -1,0 +1,46 @@
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>A Sokoban Clone</title>
+	</head>
+
+	<link rel="StyleSheet" href="css/GamePage.css" type="text/css">
+	<link rel="StyleSheet" href="css/jquery-ui-1.8.4.custom.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/reset-context-min.css">
+  
+	<script src="js/GameEngine.js" type="text/javascript"></script>
+	<script src="js/Level.js" type="text/javascript"></script>
+	<script src="js/Tiles.js" type="text/javascript"></script>
+	<script src="js/LevelInfo.js" type="text/javascript"></script>
+  
+	<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.8.4.custom.min.js" type="text/javascript"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript"></script>  
+
+	<body>
+		<div id="arrows">        
+			<p>Welcome to a Sokoban-Like Puzzle Game, press the F5 key and then ENTER to play.</p>
+			<p>During gameplay, use Up, Down, Left, and Right keys to move Tim the hero.</p>
+			<p>If you reach a deadlock (get stuck), hit F5 and ENTER to retry.</p>
+		</div>
+
+		<canvas id="canvas" width="1200" height="600">
+			Sorry your browser does not support Canvas. Please use different browser:
+			<a href="http://www.mozilla-europe.org/en/firefox/">Get Firefox</a> or
+			<a href="http://www.google.com/chrome">Get Chrome</a>
+		</canvas>
+     
+		<script type="text/javascript">
+			document.sokobanGame = new GameEngine();
+			document.sokobanGame.start();
+		</script>
+		
+		<div id='audio_block'>
+				<audio id='bgm' autoplay='autoplay' Controls the BGM>
+					<source src='snd/game_bgm.ogg'>
+					<source src='snd/game_bgm.mp3'>
+				</audio>
+		</div>
+	</body>
+</html>

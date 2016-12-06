@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<Level Number="1" Width="19" Height="11">
+<Row>    #####</Row>
+<Row>    #   #</Row>
+<Row>    #$  #</Row>
+<Row>  ###  $##</Row>
+<Row>  #  $ $ #</Row>
+<Row>### M ## #===######</Row>
+<Row>#   M ## #####  ..#</Row>
+<Row># $  $          ..#</Row>
+<Row>##### ### #@##  ..#</Row>
+<Row>    #     #########</Row>
+<Row>    #######</Row>
+</Level>

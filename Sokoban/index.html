@@ -1,0 +1,78 @@
+
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+		<title>A Sokoban Clone</title>
+	</head>
+
+	<header>
+		<h1 id='main_title'>
+			Welcome to a Sokoban Clone!
+		</h1>
+	</header>
+	
+	<link rel='StyleSheet' href='css/MainPage.css' type='text/css'>
+
+	<body>
+		<div id='main_text'> 
+			<div id='audio_block'>
+				<audio id='bgm' autoplay='autoplay' Controls the BGM>
+					<source src='snd/main_page_bgm.ogg'>
+					<source src='snd/main_page_bgm.mp3'>
+				</audio>
+			</div>
+			<p>
+				Make sure your speakers are turned on! Sokoban (Japanese for warehouse keeper), 
+				developed in the early 1980's, is a transport puzzle game where the player must successfully 
+				push boxes to designated areas of a warehouse <a href='http://en.wikipedia.org/wiki/Sokoban'>[1]</a>. Many variations of the rules
+				of Sokoban exist, which results in many different ways to play the game. Generally speaking,
+				the rules for a classical game of Sokoban are:
+				
+				<div id='sokoban_rules'>
+					(1.) Only one box can be pushed at a time.<br>
+					(2.) Boxes cannot be pulled. <br>
+					(3.) The player cannot walk through boxes or walls. <br>
+					(4.) A puzzle is solved when all the boxes have been placed in the appropriate locations. <br>
+				</div>
+				
+				<br>
+				
+				<center>
+					<img src='img/sokoban_game.png' width='970' height='300' alt='A snapshot from the video game'>
+				</center>
+				
+				<br>
+				
+				Despite it being popularized as a video game, Sokoban is of practical and scientific concern,
+				especially in the domains of artificial intelligence, motion planning problems, and theoretical
+				computer science. Human beings are undoubtably great problem and puzzle solvers in comparison to
+				our digital counterparts, that is, automatically solving Sokoban and its related problems can quickly
+				become computationally intractable <a href='http://webdocs.cs.ualberta.ca/~games/Sokoban/'> [2]</a>.
+			</p>
+			
+			<p>
+				We loosely followed a tutorial found at <a href='http://www.felinesoft.com/blog/index.php/2010/09/accelerated-game-programming-with-html5-and-canvas/'> [3]</a>
+				on using HTML5's canvas element for recreating a Sokoban clone. In our Sokoban clone you are a hero Tim
+				who must safely secure water jugs by moving them to their designated pick up areas. Our aim was to cater this
+				classic puzzle game to a disaster relief scenario. Our clone uses the following technologies, AJAX, HTML5, 
+				CSS style sheets, Javascript, jQuery, and browser cookies.
+			</p>
+			
+			<p id='game_link'>
+				This page and game provide an account of my recreating a Sokoban clone over the course of a weekend (2/2/2013 - 2/3/2013).
+				Currently there is a bug with caching the game's sprites in the web browser. This bug does not detract from being able to play
+				the game, since it can easily be overcome, pressing F5 and then ENTER before starting each level. This effectively forces the 
+				browser to refresh the page and take an initial input from the keyboard. This was tested on google Chrome v. 24.0.1312.57
+				web browser on Windows 7 64-bit, and should also work on the latest Chrome browsers for Linux and Mac OSX, and the latest 
+				version of Firfox, yet, remains untested.
+			</p>
+			
+			<p>
+				<a href='sokoban.html'> Click here to try our Sokoban clone, please enjoy!!!</a>
+			</p>
+		</div>
+		
+		document.getElementById('bgm').play();
+
+	</body>
+</html>
